@@ -3,8 +3,6 @@ Projekt Dashboardu dla sklepu Vilo
 
 Zródło: plik szkoleniowy (szkolenie z DAX)
 
-Sample: do pobrania 
-
 Cel: stworzenie dashoboardu z najważniejszymi statystykami dla sklepu Vilo. Zawiera informacje pozwalające segmentację klientów, analizę najbardziej dochodowych marek, anaizę sprzedaży w czasie, szybkie filtrowanie statystyk.
 
 IDE: Power BI Desktop, Power Query, Excel, 

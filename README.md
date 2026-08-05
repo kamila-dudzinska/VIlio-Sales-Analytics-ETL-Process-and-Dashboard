@@ -1,4 +1,4 @@
-🟣 Vilio – Raport Sprzedaży - Analityka - ETL - Dashboard
+# 🟣 Vilio – Raport Sprzedaży - Analityka - ETL - Dashboard
 
 Projekt Vilio to kompleksowy raport sprzedaży stworzony w Power BI, oparty na danych z anonimowego zbioru Superstore Sales Dataset z Kaggle: https://www.kaggle.com/datasets/himanshuuike/superstore-sales-dataset
 Na potrzeby projektu dane zostały zanonimizowane i przekształcone w fikcyjną markę Vilio, z własnym logo i identyfikacją wizualną. Logo oraz nazwe wg mojego autorskiego projektu. 
@@ -49,61 +49,67 @@ Końcowy dashboard wizualizujący dane sprzedażowe, marże, klientów i produkt
 
 1. Czyszczenie danych w Python/Pandas. Skrypt vs_dclean.py przetwarza dane z pliku CSV.
 
-** Wykonano konwersję typów, uzupełnienie braków, usunięcie duplikatów i eksport do vilio_store_clean.csv.
+* Wykonano konwersję typów, uzupełnienie braków, usunięcie duplikatów i eksport do vilio_store_clean.csv.
 
-** Eksport do SQL
+* Eksport do SQL
 
-** Dane zostały zapisane w bazie vilo_store.db przy użyciu SQLite. Dlaczego SQL Studio? Nieestety z powodu nadgorliwości programu antywirusowego (Avast) całkowicie zblokował mi się Postgres. Reinstalacja, czyszczenie ukrytych plików, dodawnie wyjątków niestety nie podziałały. Musiałam sięgnąć po prostsze rozwiąznie bez łączenia z serwerem, a idealny w takiej sytuacji jest SQL Lite. 
+* Dane zostały zapisane w bazie vilo_store.db przy użyciu SQLite. Dlaczego SQL Studio? Nieestety z powodu nadgorliwości programu antywirusowego (Avast) całkowicie zblokował mi się Postgres. Reinstalacja, czyszczenie ukrytych plików, dodawnie wyjątków niestety nie podziałały. Musiałam sięgnąć po prostsze rozwiąznie bez łączenia z serwerem, a idealny w takiej sytuacji jest SQL Lite. 
 
-** W Pythonie zastosowano funkcję load_to_sql() do automatycznego ładowania danych.
+* W Pythonie zastosowano funkcję load_to_sql() do automatycznego ładowania danych.
 
  
 2. Modelowanie danych
 
-** Dane podzielono na tabele faktów i wymiarów (SalesFact, DimRegion, DimCustomer, DimProduct).
+* Dane podzielono na tabele faktów i wymiarów (SalesFact, DimRegion, DimCustomer, DimProduct).
 
-** Zastosowano schemat gwiazdy (Star Schema) dla optymalizacji zapytań i wydajności.
+* Zastosowano schemat gwiazdy (Star Schema) dla optymalizacji zapytań i wydajności.
+
 
 
 3. Power Query
 
-** Dodatkowe czyszczenie i transformacje: zmiana formatu dat, rozdzielanie kolumn, zamiana wartości.
+
+* Dodatkowe czyszczenie i transformacje: zmiana formatu dat, rozdzielanie kolumn, zamiana wartości.
+
 
 Power Query pozwala na bezpieczną edycję zapytań bez ryzyka utraty danych.
 
 
+
 4. Model danych 🧩
-** Relacje 1 do wielu między tabelami faktów i wymiarów. Zachowana zalecana kardynalność i kierunek. 
 
-** Tabela Kalendarz umożliwia analizę w czasie (Time Intelligence).
+   
+* Relacje 1 do wielu między tabelami faktów i wymiarów. Zachowana zalecana kardynalność i kierunek. 
 
-** Osobna tabela Miary zawiera wszystkie miary DAX, m.in.:
+* Tabela Kalendarz umożliwia analizę w czasie (Time Intelligence).
 
-  ** _%_wskaźnik_zamówień_z_rabatem
+* Osobna tabela Miary zawiera wszystkie miary DAX, m.in.:
 
-  ** _dynamiczna_liczba_nowych_klientów
+  * _%_wskaźnik_zamówień_z_rabatem
 
-  **_Marża_procentowa
+  *  _dynamiczna_liczba_nowych_klientów
 
-  ** _liczba_unikalnych_produktów
+  * _Marża_procentowa
+
+  * _liczba_unikalnych_produktów
 
 
 6.  Wizualizacje i UI/UX
 
    
-** Spójny styl kolorystyczny (fiolet + róż + zieleń).
+* Spójny styl kolorystyczny (fiolet + róż + zieleń).
 
-** Każda strona raportu zawiera:
+* Każda strona raportu zawiera:
 
-** Główne wskaźniki KPI w postaci kart (zablokowane, niezmienne względem filtrów).
+* Główne wskaźniki KPI w postaci kart (zablokowane, niezmienne względem filtrów).
 
-** Wykresy liniowe, słupkowe, pierścieniowe – czytelne i intuicyjne.
+* Wykresy liniowe, słupkowe, pierścieniowe – czytelne i intuicyjne.
 
-** Slicery po prawej stronie oraz przycisk „Wyczyść filtry” dla wygody użytkownika.
+* Slicery po prawej stronie oraz przycisk „Wyczyść filtry” dla wygody użytkownika.
 
-** Ikony i linki w górnym pasku ułatwiają nawigację między stronami raportu.
+* Ikony i linki w górnym pasku ułatwiają nawigację między stronami raportu.
 
-** Formatowanie warunkowe podkreśla pozytywne i negatywne wyniki.
+* Formatowanie warunkowe podkreśla pozytywne i negatywne wyniki.
 
 
 7.  Lessons Learned 🧠

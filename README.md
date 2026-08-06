@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="images/dashboard_overview.gif" width="600">
+  <img src="dashboard_overview.gif" width="600">
 </p>
 
 

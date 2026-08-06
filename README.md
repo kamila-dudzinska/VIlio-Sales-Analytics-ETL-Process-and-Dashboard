@@ -1,5 +1,11 @@
 # 🟣 Vilio – Raport Sprzedaży - Analityka - ETL - Dashboard
 
+
+<p align="center">
+  <img src="images/dashboard_overview.gif" width="600">
+</p>
+
+
 Projekt Vilio to kompleksowy raport sprzedaży stworzony w Power BI, oparty na danych z anonimowego zbioru Superstore Sales Dataset z Kaggle: https://www.kaggle.com/datasets/himanshuuike/superstore-sales-dataset
 Na potrzeby projektu dane zostały zanonimizowane i przekształcone w fikcyjną markę Vilio, z własnym logo i identyfikacją wizualną. Logo oraz nazwe wg mojego autorskiego projektu. 
 Celem projektu było odwzorowanie pełnego procesu analitycznego w przedsiębiorstwie (ETL) – od czyszczenia danych, przez modelowanie, aż po wizualizację wyników.

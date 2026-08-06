@@ -1,9 +1,9 @@
 # 🟣 Vilio – Raport Sprzedaży - Analityka - ETL - Dashboard
 
 <p>
-</p>p>
+</p>
 <p align="center">
-  <img src="images/overview.gif" width="900">
+  <img src="images/overview.gif" width="1000">
 </p>
 <p>
 </p>p>

@@ -152,8 +152,19 @@ Power Query pozwala na bezpieczną edycję zapytań bez ryzyka utraty danych.
 
 Fragmenty kodu:
 
-<hr style="border:3px solid #AEC6CF;">
+Czyszczenie danych:
+![Python - Pandas - czyszczenie danych](images/data_cleaning.png)
 
+Połączenie z bazą danych SQL:
+![Sqlite3](images/sqlite3_connector.png)
+
+SQL - przebudowa monolitowej tabeli w wydajny model gwiazdy - Normalizacja. Podział tabeli na mniejsze tabele: tabele faktów i tabelę wymiarów (optymalizacja).
+![Normalizacja tabeli do schematu gwiazdy](images/sqlite3_connector.png)
+
+
+
+
+<hr style="border:3px solid #AEC6CF;">
 
 ###  Kontakt:
 

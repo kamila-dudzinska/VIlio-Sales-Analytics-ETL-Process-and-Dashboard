@@ -159,7 +159,7 @@ Połączenie z bazą danych SQL:
 ![Sqlite3](images/sqlite3_connector.png)
 
 SQL - przebudowa monolitowej tabeli w wydajny model gwiazdy - Normalizacja. Podział tabeli na mniejsze tabele: tabele faktów i tabelę wymiarów (optymalizacja).
-![Normalizacja tabeli do schematu gwiazdy](images/sqlite3_connector.png)
+![Normalizacja tabeli do schematu gwiazdy](images/table_normalization.png)
 
 
 

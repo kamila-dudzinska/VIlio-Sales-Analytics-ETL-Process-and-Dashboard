@@ -164,6 +164,9 @@ SQL - przebudowa monolitowej tabeli w wydajny model gwiazdy - Normalizacja. Podz
 Power BI - model gwiazdy:
 ![Model gwiazdy](images/star_schema.png)
 
+Power BI - strona główna:
+![Strona główna](images/main_page.png)
+
 Power BI - raport sprzedaży:
 ![Sprzedaż](images/sales_dashboard.png)
 

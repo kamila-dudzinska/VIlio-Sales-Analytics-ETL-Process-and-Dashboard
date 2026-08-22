@@ -161,6 +161,9 @@ Połączenie z bazą danych SQL:
 SQL - przebudowa monolitowej tabeli w wydajny model gwiazdy - Normalizacja. Podział tabeli na mniejsze tabele: tabele faktów i tabelę wymiarów (optymalizacja).
 ![Normalizacja tabeli do schematu gwiazdy](images/table_normalization.png)
 
+Power BI - miary:
+![Miary](images/measures1.png)
+
 Power BI - model gwiazdy:
 ![Model gwiazdy](images/star_schema.png)
 
